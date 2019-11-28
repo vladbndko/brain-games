@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { greet } from '../index.js';
+import greet from '..';
 
-console.log('Welcome to the Brain Games!')
+console.log('Welcome to the Brain Games!');
 greet();
