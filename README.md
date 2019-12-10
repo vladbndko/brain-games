@@ -3,3 +3,6 @@
 
 ## Brain even
 [![asciicast](https://asciinema.org/a/MpaPb1iiUVJl7xLDJI3MoOfck.svg)](https://asciinema.org/a/MpaPb1iiUVJl7xLDJI3MoOfck)
+
+## Brain even
+[![asciicast](https://asciinema.org/a/pKsb4PnLyRN1nuTuF9qze6s8j.svg)](https://asciinema.org/a/pKsb4PnLyRN1nuTuF9qze6s8j)
