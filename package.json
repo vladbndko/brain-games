@@ -12,7 +12,8 @@
     "url": "git+https://github.com/bvlad05/frontend-project-lvl1.git"
   },
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "author": "Vladyslav Bondarenko",
   "license": "ISC",
