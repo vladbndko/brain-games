@@ -12,7 +12,7 @@ import {
 
 export default () => {
   printWellcome();
-  console.log('Find the greatest common divisor of given numbers.');
+  console.log('What number is missing in the progression?');
   printGreet();
   let count = 0;
   const game = () => {

@@ -2,16 +2,16 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/097a12a087acf2f9a8e3/maintainability)](https://codeclimate.com/github/bvlad05/frontend-project-lvl1/maintainability)
 
 ## Is even
-[![asciicast](https://asciinema.org/a/MpaPb1iiUVJl7xLDJI3MoOfck.svg)](https://asciinema.org/a/MpaPb1iiUVJl7xLDJI3MoOfck)
+[![asciicast](https://asciinema.org/a/JWfACRrzR2q5VFKiehm5kA2v6.svg)](https://asciinema.org/a/JWfACRrzR2q5VFKiehm5kA2v6)
 
 ## Calculator
-[![asciicast](https://asciinema.org/a/pKsb4PnLyRN1nuTuF9qze6s8j.svg)](https://asciinema.org/a/pKsb4PnLyRN1nuTuF9qze6s8j)
+[![asciicast](https://asciinema.org/a/pq3NxQbW7PcsO0PanJnAIJW2E.svg)](https://asciinema.org/a/pq3NxQbW7PcsO0PanJnAIJW2E)
 
 ## NOD
-[![asciicast](https://asciinema.org/a/wvLEM25ERln0gxPwa1pRLS4pr.svg)](https://asciinema.org/a/wvLEM25ERln0gxPwa1pRLS4pr)
+[![asciicast](https://asciinema.org/a/TOoN5KHOleOBg58B1GRVT1GjA.svg)](https://asciinema.org/a/TOoN5KHOleOBg58B1GRVT1GjA)
 
 ## Progression
-[![asciicast](https://asciinema.org/a/BkI4INZXAKWbUxW2L0FLAVvNT.svg)](https://asciinema.org/a/BkI4INZXAKWbUxW2L0FLAVvNT)
+[![asciicast](https://asciinema.org/a/mztSrL1IGKwOd7I6y8rh4i1LE.svg)](https://asciinema.org/a/mztSrL1IGKwOd7I6y8rh4i1LE)
 
 ## Prime
-[![asciicast](https://asciinema.org/a/KssgMWzgqYS8xoPazPnjPn8ym.svg)](https://asciinema.org/a/KssgMWzgqYS8xoPazPnjPn8ym)
+[![asciicast](https://asciinema.org/a/Bb0Gl8SG6wapMEP5ff3Di98cy.svg)](https://asciinema.org/a/Bb0Gl8SG6wapMEP5ff3Di98cy)
