@@ -9,3 +9,6 @@
 
 ## NOD
 [![asciicast](https://asciinema.org/a/wvLEM25ERln0gxPwa1pRLS4pr.svg)](https://asciinema.org/a/wvLEM25ERln0gxPwa1pRLS4pr)
+
+## Progression
+[![asciicast](https://asciinema.org/a/BkI4INZXAKWbUxW2L0FLAVvNT.svg)](https://asciinema.org/a/BkI4INZXAKWbUxW2L0FLAVvNT)
