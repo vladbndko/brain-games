@@ -1,48 +1,25 @@
-import readlineSync from 'readline-sync';
+import engine from '..';
+import { getRandomNum } from '../utilities';
 
-import {
-  printWellcome,
-  printGreet,
-  printCorrect,
-  printCongratulations,
-  printWrong,
-  printQuestion,
-  gameCount,
-} from '..';
+const getGcd = (num1, num2) => {
+  const bigest = num1 > num2 ? num1 : num2;
+  const iter = (num) => {
+    if (num1 % num === 0 && num2 % num === 0) {
+      return num;
+    }
+    return iter(num - 1);
+  };
+  return iter(bigest);
+};
 
 export default () => {
-  printWellcome();
-  console.log('Find the greatest common divisor of given numbers.');
-  printGreet();
-  let count = 0;
-  const game = () => {
-    if (count === gameCount) {
-      printCongratulations();
-      return;
-    }
-    const number1 = Math.floor(Math.random() * 100);
-    const number2 = Math.floor(Math.random() * 100);
-    printQuestion(`${number1} ${number2}`);
-    const answer = readlineSync.question('Your answer: ');
-    const bigest = number1 > number2 ? number1 : number2;
-
-    const getGcd = () => {
-      const iter = (num) => {
-        if (number1 % num === 0 && number2 % num === 0) {
-          return num;
-        }
-        return iter(num - 1);
-      };
-      return iter(bigest);
-    };
-    const correctAnswer = getGcd();
-    if (+answer === correctAnswer) {
-      count += 1;
-      printCorrect();
-      game();
-    } else {
-      printWrong(answer, correctAnswer);
-    }
+  const gcd = () => {
+    const number1 = getRandomNum();
+    const number2 = getRandomNum();
+    return [`${number1} ${number2}`, `${getGcd(number1, number2)}`];
   };
-  game();
+  engine(
+    'Find the greatest common divisor of given numbers.',
+    gcd,
+  );
 };
