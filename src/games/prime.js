@@ -12,11 +12,10 @@ export const isPrime = (num) => {
   return num > 1;
 };
 
-export default () => {
-  const prime = () => {
-    const question = getRandomNum(50, 250);
-    const correntAnswer = isPrime(question) ? 'yes' : 'no';
-    return [question, correntAnswer];
-  };
-  engine(gameRule, prime);
+const prime = () => {
+  const question = getRandomNum(50, 250);
+  const correntAnswer = isPrime(question) ? 'yes' : 'no';
+  return [question, correntAnswer];
 };
+
+export default () => engine(gameRule, prime);

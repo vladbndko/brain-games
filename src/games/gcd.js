@@ -14,13 +14,12 @@ const getGcd = (num1, num2) => {
   return iter(bigest);
 };
 
-export default () => {
-  const gcd = () => {
-    const number1 = getRandomNum(10, 100);
-    const number2 = getRandomNum(10, 100);
-    const question = `${number1} ${number2}`;
-    const correctAnswer = `${getGcd(number1, number2)}`;
-    return [question, correctAnswer];
-  };
-  engine(gameRule, gcd);
+const gcd = () => {
+  const number1 = getRandomNum(10, 100);
+  const number2 = getRandomNum(10, 100);
+  const question = `${number1} ${number2}`;
+  const correctAnswer = `${getGcd(number1, number2)}`;
+  return [question, correctAnswer];
 };
+
+export default () => engine(gameRule, gcd);

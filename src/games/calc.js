@@ -30,11 +30,10 @@ const сalculate = (exp) => {
   return result;
 };
 
-export default () => {
-  const calc = () => {
-    const question = getRandomExpression().join(' ');
-    const correctAnswer = `${сalculate(question)}`;
-    return [question, correctAnswer];
-  };
-  engine(gameRule, calc);
+const calc = () => {
+  const question = getRandomExpression().join(' ');
+  const correctAnswer = `${сalculate(question)}`;
+  return [question, correctAnswer];
 };
+
+export default () => engine(gameRule, calc);
