@@ -1,5 +1,5 @@
 import engine from '..';
-import { getRandomNum } from '../utilities';
+import getRandomNum from '../utilities';
 
 export const isPrime = (num) => {
   for (let i = 2; i < num; i++) {
@@ -12,8 +12,9 @@ export const isPrime = (num) => {
 
 export default () => {
   const prime = () => {
-    const number = getRandomNum();
-    return [number, isPrime(number) ? 'yes' : 'no'];
+    const question = getRandomNum();
+    const correntAnswer = isPrime(question) ? 'yes' : 'no';
+    return [question, correntAnswer];
   };
   engine(
     'Answer "yes" if given number is prime. Otherwise answer "no".',

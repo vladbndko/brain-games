@@ -1,5 +1,5 @@
 import engine from '..';
-import { getRandomNum } from '../utilities';
+import getRandomNum from '../utilities';
 
 const getRandomExpression = () => {
   const actions = ['*', '-', '+'];
@@ -31,8 +31,9 @@ const сalculate = (exp) => {
 
 export default () => {
   const calc = () => {
-    const expression = getRandomExpression();
-    return [expression.join(' '), `${сalculate(expression)}`];
+    const question = getRandomExpression().join(' ');
+    const correctAnswer = `${сalculate(question)}`;
+    return [question, correctAnswer];
   };
   engine(
     'What is the result of the expression?',

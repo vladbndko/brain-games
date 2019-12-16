@@ -15,8 +15,9 @@ export default () => {
   const progression = () => {
     const numbers = generateNumber(5, 2, 10);
     const target = numbers[Math.floor(Math.random() * 10)];
-    const progressionStr = numbers.slice().join(' ').replace(target, '..');
-    return [progressionStr, `${target}`];
+    const question = numbers.slice().join(' ').replace(target, '..');
+    const correctAnswer = `${target}`;
+    return [question, correctAnswer];
   };
   engine(
     'What number is missing in the progression?',
