@@ -1,6 +1,8 @@
 import engine from '..';
 import getRandomNum from '../utilities';
 
+const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 export const isPrime = (num) => {
   for (let i = 2; i < num; i++) {
     if (num % i === 0) {
@@ -16,8 +18,5 @@ export default () => {
     const correntAnswer = isPrime(question) ? 'yes' : 'no';
     return [question, correntAnswer];
   };
-  engine(
-    'Answer "yes" if given number is prime. Otherwise answer "no".',
-    prime,
-  );
+  engine(gameRule, prime);
 };

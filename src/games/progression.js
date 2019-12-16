@@ -1,5 +1,7 @@
 import engine from '..';
 
+const gameRule = 'What number is missing in the progression?';
+
 const generateNumber = (start, step, length) => {
   const iter = (num, len, acc) => {
     if (len === 0) {
@@ -19,8 +21,5 @@ export default () => {
     const correctAnswer = `${target}`;
     return [question, correctAnswer];
   };
-  engine(
-    'What number is missing in the progression?',
-    progression,
-  );
+  engine(gameRule, progression);
 };

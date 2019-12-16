@@ -1,6 +1,8 @@
 import engine from '..';
 import getRandomNum from '../utilities';
 
+const gameRule = 'Answer "yes" if the number is even, otherwise answer "no"';
+
 export const isEven = (num) => num % 2 === 0;
 
 export default () => {
@@ -9,8 +11,5 @@ export default () => {
     const correctAnswer = isEven(question) ? 'yes' : 'no';
     return [question, correctAnswer];
   };
-  engine(
-    'Answer "yes" if the number is even, otherwise answer "no"',
-    even,
-  );
+  engine(gameRule, even);
 };

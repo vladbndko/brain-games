@@ -1,6 +1,8 @@
 import engine from '..';
 import getRandomNum from '../utilities';
 
+const gameRule = 'What is the result of the expression?';
+
 const getRandomExpression = () => {
   const actions = ['*', '-', '+'];
   const action = actions[getRandomNum(0, actions.length)];
@@ -34,8 +36,5 @@ export default () => {
     const correctAnswer = `${сalculate(question)}`;
     return [question, correctAnswer];
   };
-  engine(
-    'What is the result of the expression?',
-    calc,
-  );
+  engine(gameRule, calc);
 };
