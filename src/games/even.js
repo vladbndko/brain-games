@@ -1,5 +1,7 @@
 import engine from '..';
-import { getRandomNum, isEven } from '../utilities';
+import { getRandomNum } from '../utilities';
+
+export const isEven = (num) => num % 2 === 0;
 
 export default () => {
   const even = () => {
