@@ -14,8 +14,8 @@ const getGcd = (num1, num2) => {
 
 export default () => {
   const gcd = () => {
-    const number1 = getRandomNum();
-    const number2 = getRandomNum();
+    const number1 = getRandomNum(10, 100);
+    const number2 = getRandomNum(10, 100);
     const question = `${number1} ${number2}`;
     const correctAnswer = `${getGcd(number1, number2)}`;
     return [question, correctAnswer];

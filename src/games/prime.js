@@ -12,7 +12,7 @@ export const isPrime = (num) => {
 
 export default () => {
   const prime = () => {
-    const question = getRandomNum();
+    const question = getRandomNum(50, 250);
     const correntAnswer = isPrime(question) ? 'yes' : 'no';
     return [question, correntAnswer];
   };

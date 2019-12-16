@@ -5,7 +5,7 @@ export const isEven = (num) => num % 2 === 0;
 
 export default () => {
   const even = () => {
-    const question = getRandomNum();
+    const question = getRandomNum(10, 200);
     const correctAnswer = isEven(question) ? 'yes' : 'no';
     return [question, correctAnswer];
   };

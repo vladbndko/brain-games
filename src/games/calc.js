@@ -3,10 +3,9 @@ import getRandomNum from '../utilities';
 
 const getRandomExpression = () => {
   const actions = ['*', '-', '+'];
-  const getRandomAction = () => actions[Math.floor(Math.random() * actions.length)];
-  const action = getRandomAction();
-  const number1 = getRandomNum();
-  const number2 = getRandomNum();
+  const action = actions[getRandomNum(0, actions.length)];
+  const number1 = getRandomNum(5, 16);
+  const number2 = getRandomNum(5, 16);
   return [number1, action, number2];
 };
 
