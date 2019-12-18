@@ -6,7 +6,7 @@ const gameRule = 'What is the result of the expression?';
 const actions = ['*', '-', '+'];
 
 const getRandomExpression = () => {
-  const action = actions[getRandomNum(0, actions.length)];
+  const action = actions[getRandomNum(0, actions.length - 1)];
   const number1 = getRandomNum(5, 16);
   const number2 = getRandomNum(5, 16);
   return [number1, action, number2];

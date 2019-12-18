@@ -6,7 +6,7 @@ export default (rule, logic) => {
   console.log('Welcome to the Brain Games!\n');
   console.log(`${rule}\n`);
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!\n`);
   const game = () => {
     const [question, correct] = logic();
     if (playCount === finishCount) {
