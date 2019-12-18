@@ -14,7 +14,7 @@ const getGcd = (num1, num2) => {
   return iter(bigest);
 };
 
-const gcd = () => {
+const generateGcdGame = () => {
   const number1 = getRandomNum(10, 100);
   const number2 = getRandomNum(10, 100);
   const question = `${number1} ${number2}`;
@@ -22,4 +22,4 @@ const gcd = () => {
   return [question, correctAnswer];
 };
 
-export default () => engine(gameRule, gcd);
+export default () => engine(gameRule, generateGcdGame);

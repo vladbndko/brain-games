@@ -13,7 +13,7 @@ const generateNumber = (start, step, length) => {
   return iter(start, length, []);
 };
 
-const progression = () => {
+const generateProgressionGame = () => {
   const numbers = generateNumber(5, 2, 10);
   const target = numbers[Math.floor(Math.random() * 10)];
   const question = numbers.slice().join(' ').replace(target, '..');
@@ -21,4 +21,4 @@ const progression = () => {
   return [question, correctAnswer];
 };
 
-export default () => engine(gameRule, progression);
+export default () => engine(gameRule, generateProgressionGame);

@@ -31,11 +31,11 @@ const calculate = (exp) => {
   return result;
 };
 
-const calc = () => {
+const generateCalcGame = () => {
   const expression = getRandomExpression();
   const question = expression.join(' ');
   const correctAnswer = calculate(expression).toString();
   return [question, correctAnswer];
 };
 
-export default () => engine(gameRule, calc);
+export default () => engine(gameRule, generateCalcGame);
