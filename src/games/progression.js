@@ -14,8 +14,8 @@ const generateProgressionNumbers = (start, step, length) => {
 };
 
 const generateProgressionGame = () => {
-  const numbers = generateProgressionNumbers(5, 2, 10);
-  const target = numbers[Math.floor(Math.random() * 10)];
+  const numbers = generateProgressionNumbers(7, 3, 30);
+  const target = numbers[Math.floor(Math.random() * numbers.length)];
   const question = numbers.slice().join(' ').replace(target, '..');
   const correctAnswer = target.toString();
   return [question, correctAnswer];
