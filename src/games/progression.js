@@ -17,7 +17,7 @@ const progression = () => {
   const numbers = generateNumber(5, 2, 10);
   const target = numbers[Math.floor(Math.random() * 10)];
   const question = numbers.slice().join(' ').replace(target, '..');
-  const correctAnswer = `${target}`;
+  const correctAnswer = target.toString();
   return [question, correctAnswer];
 };
 

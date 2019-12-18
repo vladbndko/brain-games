@@ -12,7 +12,7 @@ const getRandomExpression = () => {
   return [number1, action, number2];
 };
 
-const сalculate = (exp) => {
+const calculate = (exp) => {
   const [number1, action, number2] = exp;
   let result = 0;
   switch (action) {
@@ -32,8 +32,9 @@ const сalculate = (exp) => {
 };
 
 const calc = () => {
-  const question = getRandomExpression().join(' ');
-  const correctAnswer = `${сalculate(question)}`;
+  const expression = getRandomExpression();
+  const question = expression.join(' ');
+  const correctAnswer = calculate(expression).toString();
   return [question, correctAnswer];
 };
 

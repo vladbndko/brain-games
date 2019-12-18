@@ -18,7 +18,7 @@ const gcd = () => {
   const number1 = getRandomNum(10, 100);
   const number2 = getRandomNum(10, 100);
   const question = `${number1} ${number2}`;
-  const correctAnswer = `${getGcd(number1, number2)}`;
+  const correctAnswer = getGcd(number1, number2).toString();
   return [question, correctAnswer];
 };
 
