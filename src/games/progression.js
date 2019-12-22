@@ -13,8 +13,16 @@ const generateProgressionNumbers = (start, step, length) => {
   return iter(start, length, []);
 };
 
+const progressionFrom = 7;
+const progressionStep = 3;
+const progressionTo = 30;
+
 const generateProgressionGame = () => {
-  const numbers = generateProgressionNumbers(7, 3, 30);
+  const numbers = generateProgressionNumbers(
+    progressionFrom,
+    progressionStep,
+    progressionTo,
+  );
   const target = numbers[Math.floor(Math.random() * numbers.length)];
   const question = numbers.slice().join(' ').replace(target, '..');
   const correctAnswer = target.toString();
