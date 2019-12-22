@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export default (rule, logic) => {
+export default (rule, getData) => {
   const finishCount = 3;
   console.log('Welcome to the Brain Games!\n');
   console.log(`${rule}\n`);
@@ -11,7 +11,7 @@ export default (rule, logic) => {
       console.log(`Congratulations, ${name}!`);
       return;
     }
-    const [question, correct] = logic();
+    const [question, correct] = getData();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === correct) {
