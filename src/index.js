@@ -2,27 +2,25 @@ import readlineSync from 'readline-sync';
 
 export default (rule, logic) => {
   const finishCount = 3;
-  let playCount = 0;
   console.log('Welcome to the Brain Games!\n');
   console.log(`${rule}\n`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!\n`);
-  const game = () => {
-    const [question, correct] = logic();
+  const game = (playCount) => {
     if (playCount === finishCount) {
       console.log(`Congratulations, ${name}!`);
       return;
     }
+    const [question, correct] = logic();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === correct) {
-      playCount += 1;
       console.log('Correct!\n');
-      game();
+      game(playCount + 1);
     } else {
       console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correct}".\n`);
       console.log(`Let's try again, ${name}!`);
     }
   };
-  game();
+  game(0);
 };
