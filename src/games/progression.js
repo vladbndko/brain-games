@@ -1,31 +1,29 @@
 import engine from '..';
+import getRandomNum from '../utilities';
 
 const gameRule = 'What number is missing in the progression?';
 
-const generateProgressionNumbers = (start, step, length) => {
-  const iter = (num, len, acc) => {
-    if (len === 0) {
-      return acc;
-    }
-    const newAcc = [...acc, num];
-    return iter(num + step, len - 1, newAcc);
-  };
-  return iter(start, length, []);
+const generateProgression = (start, diff, length) => {
+  let progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression = [...progression, start + diff * i];
+  }
+  return progression;
 };
 
-const progressionFrom = 7;
-const progressionStep = 3;
-const progressionTo = 30;
+const progressionStart = getRandomNum(2, 10);
+const progressionStep = getRandomNum(2, 10);
+const progressionLength = 30;
 
 const generateProgressionGame = () => {
-  const numbers = generateProgressionNumbers(
-    progressionFrom,
+  const progression = generateProgression(
+    progressionStart,
     progressionStep,
-    progressionTo,
+    progressionLength,
   );
-  const target = numbers[Math.floor(Math.random() * numbers.length)];
-  const question = numbers.slice().join(' ').replace(target, '..');
-  const correctAnswer = target.toString();
+  const hiddenNumber = progression[Math.floor(Math.random() * progression.length)];
+  const question = progression.slice().join(' ').replace(hiddenNumber, '..');
+  const correctAnswer = hiddenNumber.toString();
   return [question, correctAnswer];
 };
 
