@@ -13,7 +13,7 @@ const generateProgression = (start, diff, length) => {
 
 const progressionStart = getRandomNum(2, 10);
 const progressionStep = getRandomNum(2, 10);
-const progressionLength = 30;
+const progressionLength = 10;
 
 const generateProgressionGame = () => {
   const progression = generateProgression(
