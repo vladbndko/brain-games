@@ -19,7 +19,7 @@ export default (rule, getData) => {
       console.log('Correct!\n');
       startGame(counter + 1);
     } else {
-      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correct}".\n`);
+      console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correct}".`);
       console.log(`Let's try again, ${name}!`);
     }
   };
