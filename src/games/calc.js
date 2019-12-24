@@ -12,8 +12,8 @@ const getRandomExpression = () => {
   return [number1, action, number2];
 };
 
-const calculate = (exp) => {
-  const [number1, action, number2] = exp;
+const calculate = (expression) => {
+  const [number1, action, number2] = expression;
   let result = 0;
   switch (action) {
     case '*':
