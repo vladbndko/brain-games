@@ -11,16 +11,12 @@ const generateProgression = (start, diff, length) => {
   return progression;
 };
 
-const progressionStart = getRandomNum(2, 10);
-const progressionStep = getRandomNum(2, 10);
-const progressionLength = 10;
+const start = getRandomNum(2, 10);
+const step = getRandomNum(2, 10);
+const length = 10;
 
 const generateProgressionGame = () => {
-  const progression = generateProgression(
-    progressionStart,
-    progressionStep,
-    progressionLength,
-  );
+  const progression = generateProgression(start, step, length);
   const hiddenNumber = progression[Math.floor(Math.random() * progression.length)];
   const question = progression.slice().join(' ').replace(hiddenNumber, '..');
   const correctAnswer = hiddenNumber.toString();
