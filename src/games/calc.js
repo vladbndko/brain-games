@@ -14,7 +14,7 @@ const getRandomExpression = () => {
 
 const calculate = (expression) => {
   const [number1, action, number2] = expression;
-  let result = 0;
+  let result;
   switch (action) {
     case '*':
       result = number1 * number2;
